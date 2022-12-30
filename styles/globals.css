@@ -1,5 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Exo:wght@100;200;300;400;500;700&family=Playfair+Display:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,500;0,700;1,600&family=Exo:wght@100;200;300;400;500;700&family=Inter:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500&display=swap");
 
+/* font-family: 'Exo', sans-serif;
+font-family: 'Exo 2', sans-serif;
+font-family: 'Inter', sans-serif;
+font-family: 'Open Sans', sans-serif; */
 html,
 body {
   padding: 0;
@@ -91,13 +95,77 @@ body {
 /* FooterPageStylingEndsHere */
 
 /* CardStylingIsHere */
-.comp-card {
-  background-color: white;
+.Resources {
+  height: 1400px;
+  background-color: whitesmoke;
   color: black;
+  padding: 50px 100px;
 }
-.comp-card header {
+.card-header {
+  margin: 50px 0px;
+}
+.card-header header {
   display: flex;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   justify-content: space-between;
-  padding: 10px 50px;
+  padding: 50px 50px 60px 50px;
+}
+.card-header header h2 {
+  font-family: "Exo 2", sans-serif;
+}
+.card-header header p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #f5662a;
+  margin-right: 10px;
+}
+.card-header header h2,
+p {
+  padding: 0;
+  margin: 0;
+}
+.arrow {
+  /* background-color: aqua; */
+  width: 10%;
+}
+
+.card-header main {
+  display: flex;
+  justify-content: space-around;
+  /* text-align: center; */
+  /* border: 1px solid black; */
+}
+.card {
+  background-color: rgba(255, 255, 255, 1);
+  /* border: 1px solid yellow; */
+  width: 28%;
+  padding: 10px 0px;
+}
+.card img {
+  width: 100%;
+}
+.card footer {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #f5662a;
+}
+.card:nth-child(2) {
+  margin-top: -30px;
+}
+.card p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+.card p,
+footer {
+  margin: 3px 10px;
+  /* border: 1px solid black; */
+  padding: 10px;
+}
+.arrow {
+  width: 40px;
+  /* border: 1px solid orange; */
 }

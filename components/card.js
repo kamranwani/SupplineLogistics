@@ -1,15 +1,12 @@
-const Card = ({ heading2, image, paragraph, footer }) => {
+import Icon from "./Icons/fb";
+const Card = ({ image, paragraph, footer }) => {
   return (
-    <div className="comp-card">
-      <header>
-        {/* {if (heading2){<h2>{heading2}</h2>}} */}
-        <footer>{footer}</footer>
-      </header>
-      <main>
-        {/* <img src={image} /> */}
-        <p>{paragraph}</p>
-        <footer>{footer}</footer>
-      </main>
+    <div className="card">
+      <img src={image} />
+      <p>{paragraph}</p>
+      <footer>
+        {footer} <Icon name="arrow" />
+      </footer>
     </div>
   );
 };
