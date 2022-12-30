@@ -88,3 +88,16 @@ body {
   font-weight: 400;
   font-size: 17px;
 }
+/* FooterPageStylingEndsHere */
+
+/* CardStylingIsHere */
+.comp-card {
+  background-color: white;
+  color: black;
+}
+.comp-card header {
+  display: flex;
+  border: 1px solid black;
+  justify-content: space-between;
+  padding: 10px 50px;
+}
