@@ -1,10 +1,14 @@
 import IndustryReports from "./industryreports";
+import Header from "../components/header";
 import Blog from "./blog";
 const Resources = () => {
   return (
     <div className="Resources">
-      <IndustryReports />
-      <Blog />
+      <Header />
+      <div className="IndustryNBlog">
+        <IndustryReports />
+        <Blog />
+      </div>
     </div>
   );
 };

@@ -4,12 +4,11 @@
 font-family: 'Exo 2', sans-serif;
 font-family: 'Inter', sans-serif;
 font-family: 'Open Sans', sans-serif; */
+
 html,
 body {
   padding: 0;
   margin: 0;
-  /* font-family: "Exo", sans-serif;
-  font-family: "Playfair Display", serif; */
 }
 
 * {
@@ -25,6 +24,7 @@ body {
     background: black;
   }
 }
+
 /* FooterPageStylingIsHere */
 .footer {
   font-family: "Andika", sans-serif;
@@ -96,10 +96,12 @@ body {
 
 /* CardStylingIsHere */
 .Resources {
-  height: 1400px;
   background-color: whitesmoke;
-  color: black;
+}
+.IndustryNBlog {
+  height: 1400px;
   padding: 50px 100px;
+  color: black;
 }
 .card-header {
   margin: 50px 0px;
@@ -168,4 +170,86 @@ footer {
 .arrow {
   width: 40px;
   /* border: 1px solid orange; */
+}
+
+/* NavbarStylingIsHere */
+.navbar {
+  display: flex;
+  padding: 30px 0px;
+}
+.navbar a,
+.navbar-text {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.42);
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  padding: 1px 0px 1px 0px;
+}
+.navbar .navbar-text {
+  padding: 2.5px 1px 1.5px 1px;
+  color: rgba(255, 255, 255, 0.42);
+}
+/* HeaderPageStyling */
+.mainHeader {
+  background-image: url(/resourceBG.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 960px;
+  display: flex;
+  padding: 50px 100px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid black; */
+  width: 50%;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid black; */
+}
+.left .logo {
+  margin: 20px 0px 40px 0px;
+}
+.left h2 {
+  font-size: 96px;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.left p {
+  font-size: 17px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  color: #fff;
+}
+.downarrow,
+.hamburger {
+  display: block;
+  width: 20%;
+  /* border: 1px solid black; */
+  margin: 20px 10px 20px auto;
+  margin-left: auto;
+}
+.downarrow,
+.hamburger:hover {
+  cursor: pointer;
+}
+/* hiding scrollbar for browsers */
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
