@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Icon from "./Icons/fb";
 import SupplineLogo from "../assets/Suppline.svg";
+import styles from "../styles/Footer.module.css";
 
 const Footer = () => {
   const [services, setServices] = useState([
@@ -44,48 +45,40 @@ const Footer = () => {
   ]);
 
   return (
-    <div className="footer">
-      <div className="top-content">
-        <div className="logo">
+    <div className={styles.footer}>
+      <div className={styles.topContent}>
+        <div className={styles.logo}>
           <img src={SupplineLogo.src} />
         </div>
-        <div className="all-services">
+        <div className={styles.allServices}>
           <h2>Services</h2>
           {services.map((service) => (
-            <li className="service" key={service}>
-              {service}
-            </li>
+            <li key={service}>{service}</li>
           ))}
         </div>
-        <div className="all-resources">
+        <div className={styles.allResources}>
           <h2>Resources</h2>
           {resources.map((resource) => (
-            <li className="service" key={resource}>
-              {resource}
-            </li>
+            <li key={resource}>{resource}</li>
           ))}
         </div>
-        <div className="industries-contact">
-          <div className="all-industries">
+        <div className={styles.industriesContact}>
+          <div>
             <h2>Industries</h2>
             {industries.map((industry) => (
-              <li className="service" key={industry}>
-                {industry}
-              </li>
+              <li key={industry}>{industry}</li>
             ))}
           </div>
-          <div className="all-contact">
+          <div className={styles.allContact}>
             <h2>Contact</h2>
             {contacts.map((contact) => (
-              <li className="service" key={contact}>
-                {contact}
-              </li>
+              <li key={contact}>{contact}</li>
             ))}
           </div>
         </div>
-        <div className="social">
+        <div className={styles.social}>
           <h2>Social</h2>
-          <div className="social-icons">
+          <div className={styles.socialIcons}>
             <li className="icon-fb">
               <Icon name="facebook" />
             </li>
@@ -98,7 +91,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bottom-content">
+      <div className={styles.bottomContent}>
         <p>Copyright &#169; Suppline.All rights reserved.</p>
         <p>Privacy Policy | Cookies Policy</p>
       </div>

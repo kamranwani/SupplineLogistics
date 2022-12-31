@@ -1,0 +1,66 @@
+.footer {
+  font-family: "Andika", sans-serif;
+
+  font-family: "Playfair Display", serif;
+  height: 960px;
+  /* border: 1px solid white; */
+  padding: 100px 70px;
+
+  color: rgba(255, 255, 255, 1);
+  background: url(/Layer2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.topContent {
+  display: flex;
+  justify-content: space-around;
+}
+.logo {
+  width: 20%;
+  /* border: 1px solid yellow; */
+}
+.allServices,
+.allResources,
+.industriesContact {
+  width: 20%;
+  /* border: 1px solid red; */
+}
+
+.footer li {
+  list-style: none;
+  font-size: 17px;
+  margin: 5px 0px;
+}
+.footer .topContent h2 {
+  margin: 0px 0px 50px 0px;
+}
+.allContact h2 {
+  margin: 190px 0px 20px 0;
+}
+.social {
+  /* border: 1px solid white; */
+  width: 10%;
+}
+
+.socialIcons {
+  /* border: 1px solid white; */
+  display: flex;
+  padding: 2px 0px 2px 0px;
+}
+.facebook {
+  background-color: white;
+  border-radius: 50%;
+  width: 65%;
+}
+.instagram,
+.twitter {
+  width: 100%;
+}
+.bottomContent {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+  font-weight: 400;
+  font-size: 17px;
+}
